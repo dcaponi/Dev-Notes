@@ -27,6 +27,18 @@ download contents from some http endpoint and saves it to a destination file
 
 ​	`wget "url.com" -o destination_file.ext`
 
+### cURL - Also download stuff
+
+download and view contents from some endpoint
+
+​	`curl "url.com"`
+
+​	`curl -X GET "url.com" -H 'User: me' - H 'content-type: application-json'` 
+
+​	Upload a file (yes you need the `@` symbol)
+
+​	`curl -X POST "url.com" -F key=@<path to file>`
+
  ### find - search for a file
 
 search for a file within a given path
